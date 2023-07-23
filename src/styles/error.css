@@ -1,0 +1,29 @@
+.notFound{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 50%;
+    margin: auto;
+    font-weight: bold;
+}
+.oops{
+    font-size: 10rem;
+}
+.pnf{
+    font-weight: bolder;
+}
+.btn4{
+    width:15rem
+}
+.errorText{
+    font-weight: lighter;
+}
+
+@media only screen and (max-width: 1000px) {
+    .oops{
+        font-size: 5rem;
+    }
+    .btn4{
+        width:10rem
+    }
+}

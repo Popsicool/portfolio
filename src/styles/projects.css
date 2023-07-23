@@ -1,0 +1,45 @@
+.pjs{
+    margin-top: 5%;
+}
+
+.cd {
+  /* background-image: url('../assets/pop.jpg'); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 7rem;
+  width:  7rem;
+  opacity: 8;
+  border-radius: 25%;
+  cursor: pointer;
+}
+
+.projectTitle{
+  /* position: absolute; */
+  display: none;
+  width: 100%;
+  font-weight: bolder;
+  color: #007CED;
+  font-size: 10px;
+  padding: 10%;
+  padding-top: 50%;
+}
+
+.cd:hover{
+    border: 3px solid #007CED;
+    .projectTitle{
+      display: block;
+    }
+}
+.swipe{
+  cursor: pointer;
+}
+
+.dtT{
+  color: #007CED
+}
+
+.lnk{
+  word-break: break-all;
+}
