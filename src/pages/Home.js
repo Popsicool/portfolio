@@ -17,7 +17,7 @@ export const Home = () => {
             </div>
             <div className='col-sm-6'>
               <div className='hero-body'>
-                  <p className='title'>Sofware || DevOps Engineer</p>
+                  <p className='title'>Software || DevOps Engineer</p>
                   <h3 className='name'>Samson O. Akinola</h3>
                   <p className='context'>In a technologically driven world of ours, where technological solutions are required for ever evolving problems, I
                     look forward to using my technological skills to collaborate with other like minds in providing innovative solutions
