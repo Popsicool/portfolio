@@ -104,6 +104,7 @@ export const Contact = () => {
                             <div className='col-md-6 t2'>
                                 <textarea placeholder='Your message...'
                                 value={message}
+                                rows="3"
                                 onChange={(e) => setMessage(e.target.value)}
                                 required
                                 />
