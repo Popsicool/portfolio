@@ -23,6 +23,7 @@ input, input:focus, input:active, textarea, textarea:focus, textarea:active{
     border-radius: 4px;
     width: 90%;
     height: 100%;
+    padding:0.5rem;
     color: white;
 }
 textarea, textarea:focus, textarea:active{
