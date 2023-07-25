@@ -6,7 +6,7 @@ import img3 from "../assets/icons/icon3.png"
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 export const Backend = () => {
   const content = {
-    title: "Back-end",
+    title: "Backend",
     do: [
       {
         title:"Django",

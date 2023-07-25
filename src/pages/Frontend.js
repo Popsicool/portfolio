@@ -6,7 +6,7 @@ import img2 from "../assets/icons/icon2.png"
 import img3 from "../assets/icons/icon3.png"
 export const Frontend = () => {
   const content = {
-    title: "Front-End",
+    title: "Frontend",
     do: [
       {
         title:"HTML",
