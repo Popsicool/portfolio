@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom"
 
 export const Navigation = () => {
     const [open, setOpen] = useState(false)
-    const [skill, showSkill] = useState(true)
+    const [skill, showSkill] = useState(false)
     const toggle = () => {
         showSkill(false)
         setOpen(!open)
@@ -29,22 +29,22 @@ export const Navigation = () => {
                         Projects
                     </li>
                 </NavLink>
-                <div className={skill && 'dropdown'}>
+                <div className={skill ? 'dropdown' : undefined}>
                     <li className='skill' onClick={toggleSkill}>Skills {skill ? <i className='fa fa-angle-up'></i> : <i className='fa fa-angle-down'></i> } </li>
                     {skill &&
                     <div className='dropdown-content'>
                         <NavLink to='/backend'>
-                            <li>
+                            <li className='skt'>
                                 Backend
                             </li>
                         </NavLink>
                         <NavLink to='/devops'>
-                            <li>
+                            <li className='skt'>
                                 DevOps
                             </li>
                         </NavLink>
                         <NavLink to='/frontend'>
-                            <li>
+                            <li className='skt'>
                                 Frontend
                             </li>
 
