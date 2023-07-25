@@ -7,7 +7,7 @@ export const Sections = (props) => {
   return (
     <>
     <div className='secTitle'>
-      {title} skills
+      <h2>{title} skills</h2>
     </div>
         <div className='row'>
             <div className='col-md-6 do'>
