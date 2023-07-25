@@ -4,12 +4,20 @@ import { NavLink } from "react-router-dom"
 
 export const Navigation = () => {
     const [open, setOpen] = useState(false)
+    const [skill, showSkill] = useState(true)
     const toggle = () => {
+        showSkill(false)
         setOpen(!open)
+    }
+    const toggleSkill = () => {
+        showSkill(!skill)
     }
   return (
     <nav>
-        <p onClick={() => setOpen(false)}><NavLink to='/'>Popsicool</NavLink></p>
+        <p onClick={() => {
+            setOpen(false)
+            showSkill(false)
+        }}><NavLink to='/'>Popsicool</NavLink></p>
         <div className={open? "navBars2" : 'navBars'}>
             <div className='hambuger'>
                 {open ? <span onClick={toggle}><i className="fa fa-solid fa-window-close"
@@ -21,22 +29,30 @@ export const Navigation = () => {
                         Projects
                     </li>
                 </NavLink>
-                <NavLink to='/backend'>
-                    <li>
-                        Backend
-                    </li>
-                </NavLink>
-                <NavLink to='/devops'>
-                    <li>
-                        DevOps
-                    </li>
-                </NavLink>
-                <NavLink to='/frontend'>
-                    <li>
-                        Frontend
-                    </li>
+                <div className={skill && 'dropdown'}>
+                    <li className='skill' onClick={toggleSkill}>Skills {skill ? <i className='fa fa-angle-up'></i> : <i className='fa fa-angle-down'></i> } </li>
+                    {skill &&
+                    <div className='dropdown-content'>
+                        <NavLink to='/backend'>
+                            <li>
+                                Backend
+                            </li>
+                        </NavLink>
+                        <NavLink to='/devops'>
+                            <li>
+                                DevOps
+                            </li>
+                        </NavLink>
+                        <NavLink to='/frontend'>
+                            <li>
+                                Frontend
+                            </li>
 
-                </NavLink>
+                        </NavLink>
+                    </div>
+                    }
+
+                </div>
                 <NavLink to='/contact'>
                     <li>
                         Contact
