@@ -66,7 +66,7 @@ export const About = () => {
         <div className="col-md-3 text-center">
             <img src="https://lh5.googleusercontent.com/-TF8-egMVOrGwa2GBzEaxdupYly4v_s9_pyKvSJKX1u6cbKoJ_bEsreO8iRCmqZSbB4=w2400" alt="seal" />
         </div>
-        <div className="col-md-9">
+        <div className="col-md-7">
             <table className="table align-middle mb-0 .table-borderless">
       <thead className="bg-light">
         <tr>
@@ -79,7 +79,7 @@ export const About = () => {
       <tbody>
         {data.map((each) => (
           <tr className="text-success" key={each.title}>
-              <td><i className="fa fa-certificate" aria-hidden="true"></i></td>
+              <td className='td'><i className="fa fa-certificate" aria-hidden="true"></i></td>
               <td>{each.title}</td>
               <td>{each.organization}</td>
               <td>{each.date}</td>
