@@ -3,7 +3,7 @@ import { Layout } from './components/Layout';
 import { ToastContainer } from 'react-toastify';
 import {Routes, Route} from "react-router-dom"
 import { Home } from './pages/Home';
-// import { About } from './pages/About'
+import { About } from './pages/About'
 import { Frontend } from './pages/Frontend';
 import { Backend } from './pages/Backend';
 import { Devops } from './pages/Devops';
@@ -18,6 +18,7 @@ function App() {
       <Layout>
         <Routes>
           <Route path='/' exact="true" element= {<Home/>}/>
+          <Route path='/about' element= {<About/>}/>
           <Route path='/frontend' element= {<Frontend/>}/>
           <Route path='/backend' element= {<Backend/>}/>
           <Route path='/devops' element= {<Devops/>}/>

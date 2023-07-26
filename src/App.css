@@ -59,8 +59,10 @@ a:visited {
   text-decoration: none;
   color:#ffffff
 }
-
-a:hover {
+.skill{
+  cursor: pointer;
+}
+a:hover, .skill:hover {
   text-decoration: none;
   font-weight: bolder;
 }

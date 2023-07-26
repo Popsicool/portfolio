@@ -12,6 +12,9 @@ export const Navigation = () => {
     const toggleSkill = () => {
         showSkill(!skill)
     }
+    const closeShow = () => {
+        showSkill(false)
+    }
   return (
     <nav>
         <p onClick={() => {
@@ -24,8 +27,13 @@ export const Navigation = () => {
                 ></i></span>  : <span onClick={toggle}><i className="fa fa-solid fa-bars"></i></span>}
             </div>
             <ul>
+                <NavLink to='/about'>
+                    <li onClick={closeShow}>
+                        About me
+                    </li>
+                </NavLink>
                 <NavLink to='/projects'>
-                    <li>
+                    <li onClick={closeShow}>
                         Projects
                     </li>
                 </NavLink>
@@ -54,7 +62,7 @@ export const Navigation = () => {
 
                 </div>
                 <NavLink to='/contact'>
-                    <li>
+                    <li onClick={closeShow}>
                         Contact
                     </li>
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import pop from "../assets/pop.jpg"
+import pop from "../assets/dp.png"
 import "../styles/home.css"
 import { Link } from 'react-router-dom'
 import { Helmet, HelmetProvider } from 'react-helmet-async';
@@ -25,7 +25,7 @@ export const Home = () => {
                     my skillset
                   </p>
                   <p>
-                 <Link to="/projects"><button className='btn1'>Portfolio</button></Link><Link to="/contact"><button className='btn2'>Contact me</button></Link>
+                 <Link to="/projects"><button className='btn1'>Portfolio</button></Link><Link to="/about"><button className='btn2'>About me</button></Link>
                   </p>
               </div>
             </div>
