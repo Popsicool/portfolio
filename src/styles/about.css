@@ -9,3 +9,10 @@ td{
 .td{
     color:gold;
 }
+
+@media only screen and (max-width: 390px) {
+  .table{
+    margin-left: -3%;
+  }
+
+}

@@ -67,7 +67,7 @@ export const About = () => {
             <img src="https://lh5.googleusercontent.com/-TF8-egMVOrGwa2GBzEaxdupYly4v_s9_pyKvSJKX1u6cbKoJ_bEsreO8iRCmqZSbB4=w2400" alt="seal" />
         </div>
         <div className="col-md-7">
-            <table className="table align-middle mb-0 .table-borderless">
+            <table className="table align-middle mb-0 .table-borderless ">
       <thead className="bg-light">
         <tr>
             <th></th>
