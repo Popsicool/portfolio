@@ -79,7 +79,7 @@ export const About = () => {
       <tbody>
         {data.map((each) => (
           <tr className="text-success" key={each.title}>
-              <td><i className="fa fa-certificate text-success" aria-hidden="true"></i></td>
+              <td><i className="fa fa-certificate" aria-hidden="true"></i></td>
               <td>{each.title}</td>
               <td>{each.organization}</td>
               <td>{each.date}</td>
