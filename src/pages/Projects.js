@@ -120,7 +120,7 @@ export const Projects = () => {
                 </ul>
             </div>
             {isloading ?
-            <div id="res" className="text-center">
+            <div className="text-center">
                 <div className="spinner-border text-center text-md-left" role="status" id="spinner-div">
                     <button className="sr-only btn btn-primary btn-lg mt-5 text-center">Loading...</button>
                     </div>

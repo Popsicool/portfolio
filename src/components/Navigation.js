@@ -42,16 +42,16 @@ export const Navigation = () => {
                     {skill &&
                     <div className='dropdown-content'>
                         <NavLink to='/backend'>
-                            <li className='skt'>
+                            <li className='skt' onClick={closeShow}>
                                 Backend
                             </li>
                         </NavLink>
-                        <NavLink to='/devops'>
+                        <NavLink to='/devops' onClick={closeShow}>
                             <li className='skt'>
                                 DevOps
                             </li>
                         </NavLink>
-                        <NavLink to='/frontend'>
+                        <NavLink to='/frontend' onClick={closeShow}>
                             <li className='skt'>
                                 Frontend
                             </li>
@@ -61,6 +61,12 @@ export const Navigation = () => {
                     }
 
                 </div>
+                <NavLink to='/blog'>
+                    <li onClick={closeShow}>
+                        Blog
+                    </li>
+
+                </NavLink>
                 <NavLink to='/contact'>
                     <li onClick={closeShow}>
                         Contact

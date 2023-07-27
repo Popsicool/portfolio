@@ -10,6 +10,7 @@ import { Devops } from './pages/Devops';
 import { Contact } from './pages/Contact';
 import { Projects } from './pages/Projects';
 import { NotFound } from './pages/NotFound';
+import { Blog } from './pages/Blog';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Routes>
           <Route path='/' exact="true" element= {<Home/>}/>
           <Route path='/about' element= {<About/>}/>
+          <Route path='/blog' element= {<Blog/>}/>
           <Route path='/frontend' element= {<Frontend/>}/>
           <Route path='/backend' element= {<Backend/>}/>
           <Route path='/devops' element= {<Devops/>}/>
