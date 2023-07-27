@@ -1,18 +1,16 @@
-
-.details{
-    margin: auto;
-    padding:5%;
+.details {
+	margin: auto;
+	padding: 5%;
 }
-td{
-    color: #fff;
+td {
+	color: #fff;
 }
-.td{
-    color:gold;
+.td {
+	color: gold;
 }
 
-@media only screen and (max-width: 390px) {
-  .table{
-    margin-left: -3%;
-  }
-
+@media only screen and (max-width: 500px) {
+	.table {
+		margin-left: -3%;
+	}
 }
