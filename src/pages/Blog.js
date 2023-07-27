@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 // import { toast } from 'react-toastify';
 import "../styles/blog.css"
 export const Blog = () => {
@@ -43,6 +44,14 @@ export const Blog = () => {
     }
   return (
     <div>
+        <HelmetProvider>
+            <Helmet>
+            <title>Popsicool | Blog</title>
+            </Helmet>
+        </HelmetProvider>
+        <div className='secTitle'>
+            <h2>Blog Posts</h2>
+        </div>
         {blog.items ?
         <div className='row'>
         {blog.items.map((post, index) => (
