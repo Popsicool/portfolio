@@ -26,9 +26,9 @@ export const Blog = () => {
             const image = info.feed.image
             const link = info.feed.link
             const blogs = info.items
-            const posts = blogs.filter(post => post.categories.length >= 0)
+            // const posts = blogs.filter(post => post.categories.length >= 0)
             setProfile(p => ({...p, profileUrl:link, profileImg: image}))
-            setBlog({items:posts, isLoading: false})
+            setBlog({items:blogs, isLoading: false})
         })
         .catch(err => {
             // toast.error("Can't fetch blog, pls try again", {
