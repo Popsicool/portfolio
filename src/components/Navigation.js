@@ -28,12 +28,18 @@ export const Navigation = () => {
             </div>
             <ul>
                 <NavLink to='/about'>
-                    <li onClick={closeShow}>
+                    <li onClick={() => {
+                        closeShow()
+                        setOpen(false);
+                        }}>
                         About me
                     </li>
                 </NavLink>
                 <NavLink to='/projects'>
-                    <li onClick={closeShow}>
+                    <li onClick={() => {
+                        closeShow()
+                        setOpen(false);
+                        }}>
                         Projects
                     </li>
                 </NavLink>
@@ -42,16 +48,25 @@ export const Navigation = () => {
                     {skill &&
                     <div className='dropdown-content'>
                         <NavLink to='/backend'>
-                            <li className='skt' onClick={closeShow}>
+                            <li className='skt' onClick={() => {
+                        closeShow()
+                        setOpen(false);
+                        }}>
                                 Backend
                             </li>
                         </NavLink>
-                        <NavLink to='/devops' onClick={closeShow}>
+                        <NavLink to='/devops' onClick={() => {
+                        closeShow()
+                        setOpen(false);
+                        }}>
                             <li className='skt'>
                                 DevOps
                             </li>
                         </NavLink>
-                        <NavLink to='/frontend' onClick={closeShow}>
+                        <NavLink to='/frontend' onClick={() => {
+                        closeShow()
+                        setOpen(false);
+                        }}>
                             <li className='skt'>
                                 Frontend
                             </li>
@@ -62,13 +77,19 @@ export const Navigation = () => {
 
                 </div>
                 <NavLink to='/blog'>
-                    <li onClick={closeShow}>
+                    <li onClick={() => {
+                        closeShow()
+                        setOpen(false);
+                        }}>
                         Blog
                     </li>
 
                 </NavLink>
                 <NavLink to='/contact'>
-                    <li onClick={closeShow}>
+                    <li onClick={() => {
+                        closeShow()
+                        setOpen(false);
+                        }}>
                         Contact
                     </li>
 
