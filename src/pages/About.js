@@ -73,7 +73,6 @@ export const About = () => {
             <th></th>
           <th>Title</th>
           <th>Organization</th>
-          <th>Date</th>
         </tr>
       </thead>
       <tbody>
@@ -82,7 +81,6 @@ export const About = () => {
               <td className='td'><i className="fa fa-certificate" aria-hidden="true"></i></td>
               <td>{each.title}</td>
               <td>{each.organization}</td>
-              <td>{each.date}</td>
           </tr>
         ))}
       </tbody>

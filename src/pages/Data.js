@@ -25,12 +25,12 @@ const data = [
         date: "July 2023"
     },
     {
-        title:"Introduction to the intellectual enterprises of computer science and the art of programming (CS50X)",
+        title:"CS50X",
         organization: "HarvardX",
         date: "Mar 2023"
     },
     {
-        title:"Introduction to Programming with Python (CS50P)",
+        title:"CS50P",
         organization: "HarvardX",
         date: "Jun 2023"
     },

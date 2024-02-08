@@ -15,7 +15,7 @@ body{
 .App {
   /* text-align: center; */
   font-family: 'Poppins', sans-serif;
-  background-color: #222222;
+  /* background-color: #222222; */
   color: #ffffff;
   min-height: 100vh;
 }
